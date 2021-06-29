@@ -100,3 +100,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+if [ -x "$(command -v colorls)" ]; then
+    alias ls="colorls"
+    alias la="colorls -al"
+fi
