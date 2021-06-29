@@ -1,0 +1,30 @@
+alias pip="pip3"
+alias c="clear"
+alias a="nano ~/.bash_profile"
+alias s="source ~/.bash_profile"
+alias n="wc -l"
+alias mobsf="docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest"
+alias disk="df -h -t ext4 --output=size,used,avail"
+
+h1private(){
+bbscope h1 -t $1 -c url -p | grep "^\*" | sed 's/^*\(.*\)/\1/' | sed 's/^\.\(.*\)/\1/' | tr -d '*\/' | anew > ~/subdomain/h1private_programs.txt
+}
+axiomrm(){
+axiom-ls | awk '{print $1}' | grep -v 'Instance' | perl -pe 's/\e\[?.*?[\@-~]//g' | sed 's/[0-9]*//g' | grep '[a-z]' | anew | (read name;axiom-rm "$name\*" -f)
+}
+server_start(){
+cd ~/myapp/ 
+npm start & ngrok http 3000
+}
+gitdorker(){ 
+python3 ~/tools/GitDorker/GitDorker.py -tf ~/tools/GitDorker/key.txt -q $1 -d ~/tools/GitDorker/alldorks.txt -o ~/result/gitdorks/$1
+}
+gmaps(){
+python3 ~/tools/gmapsapiscanner/maps_api_scanner_python3.py
+}
+favicon(){
+python3 ~/tools/script/favicon.py $1
+}
+sec(){
+echo $1 | gau -subs | subjs | httpx -silent -mc 200 | anew | rush -j 100 'python3 ~/tools/secretfinder/SecretFinder.py -i {}'
+}
