@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 #Supported Ubuntu 20.04
 eval sudo apt update -y &>/dev/null
-eval sudo apt install ruby-full -y &>/dev/null
-eval sudo apt install gcc make -y &>/dev/null
+#eval sudo apt install ruby-full -y &>/dev/null
+#eval sudo apt install gcc make -y &>/dev/null
 eval sudo gem install colorls &>/dev/null
 eval sudo apt install zsh -y &>/dev/null
 #eval sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
