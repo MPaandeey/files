@@ -780,7 +780,7 @@
 
   ##################################[ disk_usage: disk usage ]##################################
   # Colors for different levels of disk usage.
-  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND=254
+  typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_FOREGROUND=255
   typeset -g POWERLEVEL9K_DISK_USAGE_NORMAL_BACKGROUND=6
   # Thresholds for different levels of disk usage (percentage points).
   typeset -g POWERLEVEL9K_DISK_USAGE_WARNING_LEVEL=90
@@ -808,7 +808,7 @@
 
   ######################################[ ram: free RAM ]#######################################
   # RAM color.
-  typeset -g POWERLEVEL9K_RAM_FOREGROUND=254
+  typeset -g POWERLEVEL9K_RAM_FOREGROUND=255
   typeset -g POWERLEVEL9K_RAM_BACKGROUND=2
   # Custom icon.
   # typeset -g POWERLEVEL9K_RAM_VISUAL_IDENTIFIER_EXPANSION='⭐'
