@@ -8,5 +8,6 @@ eval git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUST
 eval wget -O ~/.p10k.zsh https://raw.githubusercontent.com/maruthupandiyanv/files/main/p10k.zsh 
 eval wget -O ~/.zshrc https://raw.githubusercontent.com/maruthupandiyanv/files/main/zshrc 
 eval chsh -s /usr/bin/zsh root
+echo "source ~/.bash_profile" >>~/.zshrc
 echo " "
 echo "Close and Reopen tab to take zsh effect"
