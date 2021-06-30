@@ -1,0 +1,24 @@
+{
+    "flags": "-Ev",
+    "patterns": [
+        ".jpg",
+        ".jpeg",
+        ".gif",
+        ".png",
+        ".gif",
+        ".svg",
+        ".mp4",
+        ".swf",
+        ".css",
+        ".ttf",
+        ".tif",
+        ".tiff",
+        ".woff",
+        ".tto",
+        ".woff2",
+        ".ico",
+        ".pdf",
+        ".js",
+        ".eot"
+    ]
+}
