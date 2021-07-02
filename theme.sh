@@ -10,5 +10,6 @@ eval wget -O ~/.zshrc https://raw.githubusercontent.com/maruthupandiyanv/files/m
 eval chsh -s /usr/bin/zsh root
 echo "source ~/.bash_profile" >>~/.zshrc
 echo "DISABLE_MAGIC_FUNCTIONS=\"true"\" >>~/.zshrc
+echo "export PATH=\$HOME/.cargo/bin:\$PATH" >>~/.zshrc
 echo " "
 echo "Close and Reopen tab to take zsh effect"
