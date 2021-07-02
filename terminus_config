@@ -1,65 +1,72 @@
-enableAnalytics: false
-enableWelcomeTab: false
-terminal:
-  font: MesloLGS NF
-  autoOpen: true
-  searchOptions: {}
-  colorScheme:
-    name: Custum
-    foreground: '#eceff1'
-    background: rgba(38, 50, 56, 1)
-    selection: null
-    cursor: '#e2f3f5'
-    colors:
-      - '#000000'
-      - '#D62341'
-      - '#55aa00'
-      - '#FAED70'
-      - '#396FE2'
-      - '#BB80B3'
-      - '#008996'
-      - '#d0d0d0'
-      - rgba(255, 255, 255, 0.2)
-      - '#FF5370'
-      - '#C3E88D'
-      - '#FFCB6B'
-      - '#82AAFF'
-      - '#C792EA'
-      - '#89DDFF'
-      - '#ffffff'
-  environment: {}
-  hideTabIndex: true
-  customColorSchemes:
-    - name: Custum
-      foreground: '#eceff1'
-      background: rgba(38, 50, 56, 1)
-      selection: null
-      cursor: '#e2f3f5'
-      colors:
-        - '#000000'
-        - '#D62341'
-        - '#55aa00'
-        - '#FAED70'
-        - '#396FE2'
-        - '#BB80B3'
-        - '#008996'
-        - '#d0d0d0'
-        - rgba(255, 255, 255, 0.2)
-        - '#FF5370'
-        - '#C3E88D'
-        - '#FFCB6B'
-        - '#82AAFF'
-        - '#C792EA'
-        - '#89DDFF'
-        - '#ffffff'
-  background: colorScheme
-  fontSize: 15
-appearance:
-  vibrancy: false
+version: 1
 hotkeys:
   shell: {}
   profile: {}
-version: 1
+terminal:
+  searchOptions: {}
+  colorScheme:
+    name: Galaxy
+    foreground: '#ffffff'
+    background: '#1d2837'
+    cursor: '#bbbbbb'
+    colors:
+      - '#000000'
+      - '#f9555f'
+      - '#21b089'
+      - '#fef02a'
+      - '#589df6'
+      - '#944d95'
+      - '#1f9ee7'
+      - '#bbbbbb'
+      - '#88bef5'
+      - '#fa8c8f'
+      - '#35bb9a'
+      - '#ffff55'
+      - '#589df6'
+      - '#e75699'
+      - '#3979bc'
+      - '#ffffff'
+  fontSize: 15
+  font: MesloLGLDZ NF
+  background: colorScheme
+  customColorSchemes:
+    - name: Galaxy
+      foreground: '#ffffff'
+      background: '#1d2837'
+      cursor: '#bbbbbb'
+      colors:
+        - '#000000'
+        - '#f9555f'
+        - '#21b089'
+        - '#fef02a'
+        - '#589df6'
+        - '#944d95'
+        - '#1f9ee7'
+        - '#bbbbbb'
+        - '#88bef5'
+        - '#fa8c8f'
+        - '#35bb9a'
+        - '#ffff55'
+        - '#589df6'
+        - '#e75699'
+        - '#3979bc'
+        - '#ffffff'
+  environment: {}
+  profile: git-bash
+  bell: visual
+  bracketedPaste: false
+  warnOnMultilinePaste: false
 serial: {}
-ssh: {}
-titleControl: {}
+ssh:
+  connections: []
+  recentConnections:
+    - name: 172.105.149.169
+      group: null
+      host: 172.105.149.169
+      user: root
+      port: 22
+appearance: {}
+enableAnalytics: false
+enableWelcomeTab: false
+pluginBlacklist:
+  - serial
