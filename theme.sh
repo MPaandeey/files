@@ -9,5 +9,6 @@ eval wget -O ~/.p10k.zsh https://raw.githubusercontent.com/maruthupandiyanv/file
 eval wget -O ~/.zshrc https://raw.githubusercontent.com/maruthupandiyanv/files/main/zshrc 
 eval chsh -s /usr/bin/zsh root
 echo "source ~/.bash_profile" >>~/.zshrc
+echo "DISABLE_MAGIC_FUNCTIONS=\"true"\" >>~/.zshrc
 echo " "
 echo "Close and Reopen tab to take zsh effect"
