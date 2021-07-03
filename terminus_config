@@ -2,6 +2,15 @@ version: 1
 hotkeys:
   shell: {}
   profile: {}
+  copy:
+    - - Ctrl-Shift-C
+    - - Ctrl-C
+  paste:
+    - - Ctrl-Shift-V
+    - - Ctrl-V
+  search:
+    - - Ctrl-Shift-F
+    - - Ctrl-F
 terminal:
   searchOptions: {}
   colorScheme:
@@ -54,17 +63,12 @@ terminal:
   environment: {}
   profile: git-bash
   bell: visual
-  bracketedPaste: false
+  bracketedPaste: true
   warnOnMultilinePaste: false
 serial: {}
 ssh:
   connections: []
-  recentConnections:
-    - name: 172.105.149.169
-      group: null
-      host: 172.105.149.169
-      user: root
-      port: 22
+  recentConnections: []
 appearance: {}
 enableAnalytics: false
 enableWelcomeTab: false
