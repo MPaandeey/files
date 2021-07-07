@@ -11,12 +11,13 @@ hotkeys:
   search:
     - - Ctrl-Shift-F
     - - Ctrl-F
+  restart-ssh-session: []
 terminal:
   searchOptions: {}
   colorScheme:
     name: Galaxy
     foreground: '#ffffff'
-    background: '#1d2837'
+    background: '#283337'
     cursor: '#bbbbbb'
     colors:
       - '#000000'
@@ -37,7 +38,7 @@ terminal:
       - '#ffffff'
   fontSize: 15
   font: MesloLGLDZ NF
-  background: colorScheme
+  background: theme
   customColorSchemes:
     - name: Galaxy
       foreground: '#ffffff'
@@ -65,12 +66,22 @@ terminal:
   bell: visual
   bracketedPaste: true
   warnOnMultilinePaste: false
+  frontend: xterm
+  ligatures: true
+  hideCloseButton: false
+  hideTabIndex: false
 serial: {}
 ssh:
   connections: []
   recentConnections: []
-appearance: {}
+appearance:
+  opacity: 1
+  frame: thin
+  vibrancyType: fluent
+  vibrancy: false
+  theme: Standard
 enableAnalytics: false
 enableWelcomeTab: false
 pluginBlacklist:
   - serial
+qc: {}
