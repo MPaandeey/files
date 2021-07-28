@@ -6,6 +6,12 @@ alias n="wc -l"
 alias mobsf="docker run -it --rm -p 8000:8000 opensecurity/mobile-security-framework-mobsf:latest"
 alias disk="df -h -t ext4 --output=size,used,avail"
 
+filestash_up(){
+cd ~/filestash && docker-compose up -d;cd
+}
+filestash_down(){ 
+docker kill $(docker ps -q)
+}
 h1private(){
 bbscope h1 -t $1 -c url -p | grep "^\*" | sed 's/^*\(.*\)/\1/' | sed 's/^\.\(.*\)/\1/' | tr -d '*\/' | anew > ~/subdomain/h1private_programs.txt
 }
