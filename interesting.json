@@ -1,0 +1,11 @@
+{
+     "flags": "-iE", 
+     "patterns": [
+"dev",
+"stag",
+"admin",
+"internal",
+"admin="
+
+]
+}
